@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=Manrope:wght@200..800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    line-height: 1.4;
+    font-family: "Manrope", sans-serif;
+    padding: 1rem;
+    font-weight: 400;
+   
+}
+
+p{
+    font-size: 0.75rem;
+}
+h1 {
+   font-family:  "DM Serif Display", serif;
+   font-size: 1.5rem;
+   color: white;
+}
+
+.mast{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: #5921cf;
+    gap: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
+    
+}
+
+.logo {
+    width: 100%;
+    max-width: 20%;
+
+
+}
+
+.nav-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+}
+
+button[info="home"]{
+
+    background-color: #baa2fc;
+    color: white;
+    padding: 15px;
+    border: none;
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    transition: background-color 0.5s, transform 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+button[info="home"]:hover {
+    background: #fe583b;
+    color: white;
+}
+
+
+button[info="portfolio"]{
+    background-color: #5921cf;
+    color: white;
+    padding: 15px;
+    border: none;
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    transition: background-color 0.5s, transform 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+button[info="portfolio"]:hover {
+    background: #fe583b;
+    color: white;
+}
+
+
+h2 {
+    font-family:  "DM Serif Display", serif;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #fe583b;
+}
+
+.topics {
+    margin-bottom: 2rem;
+
+}
+.image-container img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.port-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:1rem;
+    margin-bottom: 2rem;
+    
+}
+
+
+
+.port-img {
+    transition:transform 1s;
+}
+
+.port-img:hover {
+    transform: scale(0.9)
+}
+
+hr {
+    color:#baa2fc;
+    margin-bottom: 0.75rem;
+    opacity: 50%;
+}
+
+
+
+figcaption {
+    font-family: "Manrope" serif;
+    font-size: 0.75rem;
+    font-style: italic;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    color:#5921cf;
+}
+footer {
+    text-align: center;
+
+
+}
+footer ul {
+    list-style: none;
+    
+}
+
+.f {
+    font-weight: 700;
+    margin-top: 1rem;
+    
+}
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+    
+}
+
+.socials img {
+    width: 40px;
+    margin-top: 1.5rem;
+
+}
+
+@media (min-width:40rem) {
+
+
+    .logo{
+        width: 10%;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+
+
+   .home-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    
+   }
+    
+
+    .nav-buttons{
+        display: flex;
+        flex-direction: row;
+    }
+
+    button[info="home"]{
+
+       width: 300px;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
+    button[info="portfolio"]{
+
+        width: 300px;
+    }
+
+    .image-container{
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .imagery {
+        flex: 0 0 40%;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        max-width: 40%;
+    }
+
+    .image-container p {
+        flex: 0 0 60%;
+    }
+
+
+
+    
+
+
+
+}
+
+@media (min-width:80rem) {
+
+
+
+    .home-page {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+    .nav-buttons{
+        display: flex;
+        flex-direction: row;
+    }
+
+    button[info="home"]{
+
+       width: 500px;
+    }
+
+    button[info="portfolio"]{
+
+        width: 500px;
+    }
+
+    .image-container {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .imagery {
+        width: 40%;
+        margin-right: 20px;
+    }
+
+    .image-container p {
+        width: 60%;
+    }
+
+    .port-page {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    
+
+}
